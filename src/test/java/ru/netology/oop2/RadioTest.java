@@ -6,6 +6,15 @@ import org.junit.jupiter.api.Test;
 public class RadioTest {
 
     @Test
+    public void shouldCountStation() {
+        Radio radio = new Radio(10);
+
+        radio.setCurrentStation(9);
+
+        Assertions.assertEquals(9, radio.getCurrentStation());
+    }
+
+    @Test
     public void shouldSetCurrentStation() {
         Radio radio = new Radio();
 
